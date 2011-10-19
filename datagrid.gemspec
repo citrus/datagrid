@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{datagrid}
+  s.name = "datagrid"
   s.version = "0.3.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bogdan Gusiev"]
-  s.date = %q{2011-08-22}
-  s.description = %q{This allows you to easily build datagrid aka data tables with sortable columns and filters}
-  s.email = %q{agresso@gmail.com}
+  s.date = "2011-10-19"
+  s.description = "This allows you to easily build datagrid aka data tables with sortable columns and filters"
+  s.email = "agresso@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt"
   ]
@@ -60,14 +60,13 @@ Gem::Specification.new do |s|
     "spec/support/schema.rb",
     "spec/support/simple_report.rb"
   ]
-  s.homepage = %q{http://github.com/bogdan/datagrid}
+  s.homepage = "http://github.com/bogdan/datagrid"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Ruby gem to create datagrids}
+  s.rubygems_version = "1.8.11"
+  s.summary = "Ruby gem to create datagrids"
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
@@ -82,7 +81,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<sqlite3-ruby>, [">= 0"])
       s.add_development_dependency(%q<fastercsv>, [">= 0"])
       s.add_development_dependency(%q<nokogiri>, [">= 0"])
-      s.add_development_dependency(%q<will_paginate>, ["= 2.3.15"])
       s.add_development_dependency(%q<accept_values_for>, [">= 0"])
     else
       s.add_dependency(%q<rails>, [">= 0"])
@@ -96,7 +94,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<sqlite3-ruby>, [">= 0"])
       s.add_dependency(%q<fastercsv>, [">= 0"])
       s.add_dependency(%q<nokogiri>, [">= 0"])
-      s.add_dependency(%q<will_paginate>, ["= 2.3.15"])
       s.add_dependency(%q<accept_values_for>, [">= 0"])
     end
   else
@@ -111,7 +108,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<sqlite3-ruby>, [">= 0"])
     s.add_dependency(%q<fastercsv>, [">= 0"])
     s.add_dependency(%q<nokogiri>, [">= 0"])
-    s.add_dependency(%q<will_paginate>, ["= 2.3.15"])
     s.add_dependency(%q<accept_values_for>, [">= 0"])
   end
 end

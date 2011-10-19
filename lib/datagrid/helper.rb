@@ -22,9 +22,7 @@ module Datagrid
       html = options[:html] || {}
       html[:class] ||= "datagrid"
       assets = report.assets
-      paginate = options[:paginate]
-      assets = assets.paginate(paginate) if paginate 
-      content = content_tag(:tr, datagrid_header(report, options)) + datagrid_rows(report, assets, options)
+      content = content_tag(:tr, datagrid_header(report, options)) + datagrid_rows(report, report.assets, options)
       content_tag(:table, content, html)
     end
 

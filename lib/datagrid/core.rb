@@ -86,10 +86,6 @@ module Datagrid
         end
       end
 
-      def paginate(*args, &block)
-        self.assets.paginate(*args, &block)
-      end
-
       def scope
         self.class.scope
       end

@@ -22,7 +22,6 @@ group :development do
   gem "sqlite3-ruby"
   gem "fastercsv"
   gem "nokogiri"
-  gem 'will_paginate', '2.3.15'
   gem "accept_values_for"
 
 end

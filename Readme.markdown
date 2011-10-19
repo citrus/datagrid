@@ -164,14 +164,13 @@ end
 ```
 
 There is a simple helper set of helpers that allows you display report:
-(require will_paginate)
 
 ``` haml
-- assets = @report.assets.paginate(:page => params[:page])
+- assets = @report.assets.page(params[:page])
 
 %div== Total #{assets.total_entries}
 = datagrid_table(@report, assets)
-= will_paginate assets
+= paginate assets
 ```
 
 If you need a custom interface for your report you should probably build it yourself with datagrid helpers.

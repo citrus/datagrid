@@ -6,10 +6,6 @@ ActiveRecord::Base.configurations = true
 File.open('spec.log', "w").close
 ActiveRecord::Base.logger = Logger.new('spec.log')
 
-
-
-WillPaginate.enable
-
 ActiveRecord::Schema.verbose = false
 ActiveRecord::Schema.define(:version => 1) do
 
