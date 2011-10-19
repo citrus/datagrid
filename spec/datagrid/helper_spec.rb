@@ -53,7 +53,7 @@ HTML
   end
 
   describe ".datagrid_order_for" do
-    it "should render ordreing layout" do
+    it "should render ordering layout" do
       class OrderedGrid
         include Datagrid
         scope { Entry }
