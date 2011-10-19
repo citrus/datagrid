@@ -41,8 +41,7 @@ module Datagrid
           @scope.call
         end
       end
-
-
+      
       protected
       def check_scope_defined!(message = "Scope not defined")
         raise(Datagrid::ConfigurationError, message) unless @scope
@@ -79,7 +78,7 @@ module Datagrid
       def assets
         scope.scoped({})
       end
-
+      
       def attributes=(attributes)
         attributes.each do |name, value|
           self[name] = value
@@ -89,8 +88,13 @@ module Datagrid
       def scope
         self.class.scope
       end
-
-
+      
+      def apply_scope(&block)
+        current_scope = scope
+        self.class.scope do
+          yield current_scope
+        end
+      end
       
       protected
 

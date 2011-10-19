@@ -21,11 +21,9 @@ module Datagrid
       options = args.extract_options!
       html = options[:html] || {}
       html[:class] ||= "datagrid"
-      assets = report.assets
       content = content_tag(:tr, datagrid_header(report, options)) + datagrid_rows(report, report.assets, options)
       content_tag(:table, content, html)
     end
-
 
     def datagrid_header(grid, options = {})
       header = empty_string
